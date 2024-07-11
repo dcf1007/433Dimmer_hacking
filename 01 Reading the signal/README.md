@@ -1,5 +1,5 @@
 # Reading the signal
-(01 Reading the signal/P_20240711_232829.jpg)
+![](01 Reading the signal/P_20240711_232829.jpg)
 Equipment used:
  - Raspberry Pi 3B
  - DSO Shell D150 Oscilloscope
