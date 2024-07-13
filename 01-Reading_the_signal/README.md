@@ -75,9 +75,20 @@ G=17 l=0 d=1201         G=17 l=0 d=1199         G=17 l=0 d=1201
 G=17 l=1 d=457          G=17 l=1 d=458          G=17 l=1 d=457          
 G=17 l=0 d=399          G=17 l=0 d=398          G=17 l=0 d=399          
 ```
-A small modification of the code ((monitor_plot.py)[/01-Reading_the_signal/monitor_plot.py]) allowed me to plot the signal.
+A small modification of the code ([monitor_plot.py](/01-Reading_the_signal/monitor_plot.py)) allowed me to plot the signal.
 
-<img src="/01-Reading_the_signal/Power_btn.jpg"width="100%">
+<img src="/01-Reading_the_signal/power_button_signal.svg" width="100%">
+
+After capturing 1s of the signal and averaging the length of the pulses I get 417.63 μs for the short pulses and 1231.12 μs for the long pulses.
+If we assume a Manchester code the period should be twice the short pulse width and that gives a base clock frequency of 1197.61Hz ≈ 1.2KHz.
+If we overlap the square wave with our signal we get quite a good overlap, although we can see in the middle of the signal that it is slightly out of sync.
+
+<img src="/01-Reading_the_signal/power_button_signal_wWave.svg" width="100%">
+
+Now that we know the period and frequency, we can denoise the signal.
+
+
+
 
 
 
