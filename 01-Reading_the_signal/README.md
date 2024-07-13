@@ -8,6 +8,10 @@ Equipment used:
   - Small Breadboard
   - 2x RF Remote controls
 
+Basics of square waveform:
+![image](https://github.com/user-attachments/assets/87663d8f-73e6-47bf-94f5-0cfef6cb7e2a)
+
+
 ## 2024-07-11 Getting an idea of how the signals look like
 The first thing to do is just Hook up the RF module to 5V and read the signal with the oscilloscope
 
@@ -87,6 +91,8 @@ If we overlap the square wave with our signal we get quite a good overlap, altho
 
 Now that we know the period and frequency, we can denoise the signal.
 
+# 2024-07-13 Figuring out the signal
+After taking a careful look to the signal, it can't be Manchester as it does not follow the rules for it (explain later)
 
 
 
