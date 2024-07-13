@@ -81,7 +81,7 @@ A small modification of the code ([monitor_plot.py](/01-Reading_the_signal/monit
 
 After capturing 1s of the signal and averaging the length of the pulses I get 417.63 μs for the short pulses and 1231.12 μs for the long pulses.
 If we assume a Manchester code the period should be twice the short pulse width and that gives a base clock frequency of 1197.61Hz ≈ 1.2KHz.
-If we overlap the square wave with our signal we get quite a good overlap, although we can see in the middle of the signal that it is slightly out of sync.
+If we overlap the square wave with our signal we get quite a good overlap, although we can see that there is some jitter in the signal.
 
 <img src="/01-Reading_the_signal/power_button_signal_wWave.svg" width="100%">
 
