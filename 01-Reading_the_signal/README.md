@@ -113,7 +113,7 @@ In Manchester code, the signal for 1 is 0:1 (the first half period low and the s
 
 That reminded me of CMI (Coded Mark Inversion). In CMI the 0 is always 0:1 while the 1 alternates between 0:0 and 1:1 each time it is coded. The signal of the remote would break the alternating rule.
 
-There seems to be a pattern in the remote signal though, after each period 1:1 or 0:0 comes a 0:1 inconditionally. So it would seem that after every period containing data there is a period with the clock pulse before the next data period (every second period is a clock period). So Period A = 1, Period B = 0 and Period C = Clock period.
+There seems to be a pattern in the remote signal though, after each period 1:1 or 0:0 comes a 0:1 inconditionally. So it would seem that after every period containing data there is a period with the clock pulse before the next data period (every second period is a clock period). So Period A = 1, Period B = 0 and Period C = Clock period. Reading it this way, it gives us 24 bit of data: `111000100101010000000001`
 
 
 
