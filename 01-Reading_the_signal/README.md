@@ -93,11 +93,11 @@ After capturing 1s of the signal (19 full repetitions), we averaged the values a
 
 The length of the long pulses seems to be 3 times the duration of the short pulses and they seem to jitter about ± 50 μs.
 If we assume that it uses Manchester code, the period should be twice the width of the short pulse and that gives a base clock frequency of 1199 Hz ≈ 1.2KHz.
-Now we can overlap the square wave with our signal and see if they fit. We get quite a good overlap, although we can see that the jitter in the signal.
+Now we can overlap the square wave with our signal and see if they fit. We get quite a good overlap, although we can see that the jitter in the signal and because of it, by the end of the signal we have lost a full pulse width.
 
 <img src="/01-Reading_the_signal/raw_signal_w_clock.svg" width="100%">
 
-Knowing the frequency, now we can denoise the signal before continuing the analysis. For that we divide the duration of each pulse by the average duration of the short pulse, round it to the closest integer and multiply it by the theoretical pulse width of 1.2 KHz.
+Knowing the frequency, now we can denoise the signal to get rid of the jitter before continuing the analysis. For that we divide the duration of each pulse by the average duration of the short pulse, round it to the closest integer and multiply it by the theoretical pulse width of 1.2 KHz.
 
 <img src="/01-Reading_the_signal/denoised_signal_w_clock.svg" width="100%">
 
