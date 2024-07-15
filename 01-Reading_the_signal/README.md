@@ -9,6 +9,7 @@ Equipment used:
   - 2x RF Remote controls
 
 Basics of square waveform:
+
 ![image](https://github.com/user-attachments/assets/87663d8f-73e6-47bf-94f5-0cfef6cb7e2a)
 
 
