@@ -120,9 +120,15 @@ So following with the previous assumption, it would seem that after every period
 
 <img src="/01-Reading_the_signal/decoded_signal.svg" width="100%">
 
-Reading it this way, it gives us 24 bit codeword: `111000100101010000000001`. This codeword belongs to the ON/OFF button of one of the remotes. Let's read the other one and try to figure out the remote ID and the command.
+Reading it this way, it gives us 24 bit codeword: `111000100101010000000001`. This codeword belongs to the ON/OFF button of one of the remotes. 
+In order to try to figure out which bits are the remote ID and which ones are the command, we can read the second remote and look at which bits are invariable.
 
-
-
-
-
+```
+         | 1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24
+---------|-----------------------------------------------------------------------
+Remote A | 1  1  1  0  0  0  1  0  0  1  0  1  0  1  0  0  0  0  0  0  0  0  0  1
+Remote B | 0  1  1  1  1  0  0  1  0  0  0  0  0  0  1  1  0  0  0  0  0  0  0  1
+           ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾  ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
+                            Remote ID                              Command
+```
+The first 16 bit seem to be the ID of the remote and vary between them whilst the last 8 bit seem to be the command
