@@ -8,9 +8,9 @@ Equipment used:
   - Small Breadboard
   - 2x RF Remote controls
 
-Basics of square waveform:
+Basics of square waveform (from www.electronics-tutorials.ws):
 
-![image](https://github.com/user-attachments/assets/87663d8f-73e6-47bf-94f5-0cfef6cb7e2a)
+[![image](https://github.com/user-attachments/assets/87663d8f-73e6-47bf-94f5-0cfef6cb7e2a)](https://www.electronics-tutorials.ws/waveforms/waveforms.html)
 
 
 ## 2024-07-11 Getting an idea of how the signals look like
