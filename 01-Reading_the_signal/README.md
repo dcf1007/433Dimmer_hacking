@@ -120,7 +120,8 @@ So following with the previous assumption, it would seem that after every period
 
 <img src="/01-Reading_the_signal/decoded_signal.svg" width="100%">
 
-Reading it this way, it gives us 24 bit of data: `111000100101010000000001`
+Reading it this way, it gives us 24 bit codeword: `111000100101010000000001`. This codeword belongs to the ON/OFF button of one of the remotes. Let's read the other one and try to figure out the remote ID and the command.
+
 
 
 
