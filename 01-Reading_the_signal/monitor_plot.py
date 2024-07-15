@@ -28,12 +28,12 @@ def cbf(GPIO, level, tick):
       if last[GPIO] != None:
          # When rising it changes from 0 to 1
          if level == 1:
-            print(pigpio.tickDiff(first[GPIO], tick), GPIO, 0, pigpio.tickDiff(last[GPIO], tick))
-            print(pigpio.tickDiff(first[GPIO], tick), GPIO, 1, "")
+            print(GPIO, pigpio.tickDiff(first[GPIO], tick), 0, pigpio.tickDiff(last[GPIO], tick))
+            print(GPIO, pigpio.tickDiff(first[GPIO], tick), 1, "")
          # When falling it changes from 1 to 0
          else:
-            print(pigpio.tickDiff(first[GPIO], tick), GPIO, 1, pigpio.tickDiff(last[GPIO], tick))
-            print(pigpio.tickDiff(first[GPIO], tick), GPIO, 0, "")
+            print(GPIO, pigpio.tickDiff(first[GPIO], tick), 1, pigpio.tickDiff(last[GPIO], tick))
+            print(GPIO, pigpio.tickDiff(first[GPIO], tick), 0, "")
       last[GPIO] = tick
    else:
       #capture_finished[GPIO] = True
