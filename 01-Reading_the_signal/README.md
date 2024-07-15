@@ -93,9 +93,17 @@ If we overlap the square wave with our signal we get quite a good overlap, altho
 Now that we know the period and frequency, we can denoise the signal.
 
 # 2024-07-13 Figuring out the signal
-After taking a careful look to the signal, it can't be Manchester as it does not follow the rules for it (explain later)
+After taking a careful look to the signal, it can't be Manchester as it does not follow the rules for it.
 
+![image](https://github.com/user-attachments/assets/9ebda7fa-a22f-4c83-95d1-51fe60ea6a2b)
 
+In Manchester code, the signal for 1 is 0:1 (the first half period low and the second half period high), and for 0 is 1:0 (the first half period is high and the second half period low). In my signal I can identify 3 different pulses, 1:1 (all high), 0:0 (all low), 0:1 (first half low and first half high).
+
+![image](https://github.com/user-attachments/assets/cc126e3a-7f0d-4b5e-bbc3-f5cfbcf23e67)
+
+That reminded me of CMI (Coded Mark Inversion). In CMI the 0 is always 0:1 while the 1 alternates between 0:0 and 1:1 each time it is coded. The signal of the remote would break the alternating rule.
+
+There seems to be a pattern in the remote signal though, after each 1:1 or 0:0 comes a 0:1 inconditionally. So it would seem that after every pulse containing data there is a clock pulse before the next data pulse.
 
 
 
