@@ -27,7 +27,7 @@ The range in which the signal is picked up goes down to 1-2 cm from the coil in 
 
 I am using Raspbian 12.5 (bookworm) in which the sysfs interrupts have been deprecated and removed. The alternative lgpio module does not provide enough speed and a lot of edges are missed. Pigpio (available in the repository) seems to be doing a good job though. Executing the daemon with `sudo pigpiod -s 1` to increase the sampling speed to 1μs gives a perfect resolution. To take a first acquisition we used [the monitor.py example from Pigpio](https://abyz.me.uk/rpi/pigpio/examples.html#Python_monitor_py).
 
-To find the first full signal I looked for a long low (about 12 ms), followed by 3 x (1.2ms/0.6ms) high/low signals according to the observations in the oscilloscope (below 3 replicas of the signal, G=GPIO; l=logic state; d=duration in μs).
+To find the first full signal I looked for a long low (about 12 ms), followed by 3 x (1.2ms/0.6ms) high/low signals according to the observations in the oscilloscope (below 3 replicas of the signal, G=GPIO; l=edge direction; d=duration in μs). Bear in mind that for example `G=17 l=1 d=12243` does not indicate that there were 12ms in state high, but that there was a change from low to high after 12ms, therefore the 12 ms were LOW.
 ```
 G=17 l=1 d=12243        G=17 l=1 d=12241        G=17 l=1 d=12240        
 G=17 l=0 d=1218         G=17 l=0 d=1212         G=17 l=0 d=1212         
