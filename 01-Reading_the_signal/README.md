@@ -107,7 +107,7 @@ After taking a careful look to the signal, it can't be Manchester as it does not
 
 ![image](https://github.com/user-attachments/assets/9ebda7fa-a22f-4c83-95d1-51fe60ea6a2b)
 
-In Manchester code, the signal for 1 is 0:1 (the first half period low and the second half period high), and for 0 is 1:0 (the first half period is high and the second half period low). In my signal I can identify 3 different pulses, 1:1 (all high), 0:0 (all low), 0:1 (first half low and first half high).
+In Manchester code, the signal for 1 is 0:1 (the first half period low and the second half period high), and for 0 is 1:0 (the first half period is high and the second half period low). In this signal we can identify 3 different pulses, 1:1 (all high), 0:0 (all low), 0:1 (first half low and first half high).
 
 ![image](https://github.com/user-attachments/assets/cc126e3a-7f0d-4b5e-bbc3-f5cfbcf23e67)
 
