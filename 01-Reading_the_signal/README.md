@@ -18,16 +18,16 @@ The first thing to do is just Hook up the RF module to 5V and read the signal wi
 
 <img src="/01-Reading_the_signal/P_20240712_012258.jpg" height=200>
 
-At first glance, the signal seems to be of about 1KHz and the Digital Signal Encoding looks like it could be Manchester code.
+There is a mixture of short and long pulses. At first glance, if we assume the shortest pulse to be the pulse width of the signal, it seems to be of about 1KHz and the Digital Signal Encoding looks like it could be Manchester code.
 In order to acquire data from the sensor and further process it, we will try to run the receiver from the 3.3V line of the Rpi and see if we can still gather some decent signal read in the oscilloscope. For data acquisition with the Rpi we will use GPIO17.
 
 <img src="/01-Reading_the_signal/P_20240712_021031.jpg" height=200>
 
 The range in which the signal is picked up goes down to 1-2 cm from the coil in the receiver. But the quality of the signal at < 1 cm is as good as before. So for simplicity we will use this set-up to measure the RF signals of the remotes with the Rpi.
 
-I am using Raspbian 12.5 (bookworm) in which the sysfs interrupts have been deprecated and removed. The alternative lgpio module does not provide enough speed and a lot of edges are missed. Pigpio (available in the repository) seems to be doing a good job though. Executing the daemon with `sudo pigpiod -s 1` to increase the sampling speed to 1μs gives a perfect resolution. To take a first glance at the data we used [the monitor.py example from Pigpio](https://abyz.me.uk/rpi/pigpio/examples.html#Python_monitor_py).
+I am using Raspbian 12.5 (bookworm) in which the sysfs interrupts have been deprecated and removed. The alternative lgpio module does not provide enough speed and a lot of edges are missed. Pigpio (available in the repository) seems to be doing a good job though. Executing the daemon with `sudo pigpiod -s 1` to increase the sampling speed to 1μs gives a perfect resolution. To take a first acquisition we used [the monitor.py example from Pigpio](https://abyz.me.uk/rpi/pigpio/examples.html#Python_monitor_py).
 
-To find the first full signal I looked for a long 0 (about 12 ms), followed by 3x(1.2ms/0.6ms) 1/0 signals according to the observations in the oscilloscope (below 3 replicas of the signal, G=GPIO; l=logic state; d=duration in μs).
+To find the first full signal I looked for a long low (about 12 ms), followed by 3 x (1.2ms/0.6ms) high/low signals according to the observations in the oscilloscope (below 3 replicas of the signal, G=GPIO; l=logic state; d=duration in μs).
 ```
 G=17 l=1 d=12243        G=17 l=1 d=12241        G=17 l=1 d=12240        
 G=17 l=0 d=1218         G=17 l=0 d=1212         G=17 l=0 d=1212         
@@ -103,7 +103,8 @@ In Manchester code, the signal for 1 is 0:1 (the first half period low and the s
 
 That reminded me of CMI (Coded Mark Inversion). In CMI the 0 is always 0:1 while the 1 alternates between 0:0 and 1:1 each time it is coded. The signal of the remote would break the alternating rule.
 
-There seems to be a pattern in the remote signal though, after each 1:1 or 0:0 comes a 0:1 inconditionally. So it would seem that after every pulse containing data there is a clock pulse before the next data pulse.
+There seems to be a pattern in the remote signal though, after each 1:1 or 0:0 comes a 0:1 inconditionally. So it would seem that after every pulse containing data there is a clock pulse before the next data pulse (every second pulse is a clock pulse).
+
 
 
 
