@@ -80,7 +80,7 @@ G=17 l=0 d=1201         G=17 l=0 d=1199         G=17 l=0 d=1201
 G=17 l=1 d=457          G=17 l=1 d=458          G=17 l=1 d=457          
 G=17 l=0 d=399          G=17 l=0 d=398          G=17 l=0 d=399          
 ```
-A small modification of the code ([monitor_plot.py](/01-Reading_the_signal/monitor_plot.py)) allows us to plot the signal.
+With some modifications of the code ([monitor_plot.py](/01-Reading_the_signal/monitor_plot.py)) we can plot the signal.
 
 <img src="/01-Reading_the_signal/raw_signal.svg" width="100%">
 
