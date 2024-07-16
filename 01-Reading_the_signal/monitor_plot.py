@@ -54,7 +54,7 @@ if not args.overwrite:
             # Set the GPIO pin nr. as key and the rest of the columns as values
             stored_signals.setdefault(row[1], []).append(row[2])
    except FileNotFoundError:
-      pass
+      args.overwrite = True
 
 # Initialize the variables for all the GPIO pins
 device_number = 0

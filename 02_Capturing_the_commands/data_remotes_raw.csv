@@ -1,3 +1,4 @@
+GPIO;Device name;Signal name;Time (μs);Level;Duration (μs)
 17;remote_a;on_off_btn;391;1;391
 17;remote_a;on_off_btn;1638;0;1247
 17;remote_a;on_off_btn;2824;1;1186
