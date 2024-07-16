@@ -4,17 +4,31 @@ import sys
 import time
 import pigpio
 
-#capture_finished = [False]*32
-capture_finished = False
-first = [None]*32
-last = [None]*32
-cb = []
+pi = pigpio.pi()
+timeout = 30 #Timeout in second
+capture_finished = {}
+first = {}
+last = {}
+cb = {}
+
+if not pi.connected:
+   exit()
+
+if len(sys.argv) == 1:
+   G = range(0, 32)
+else:
+   G = []
+   for a in sys.argv[1:]:
+      G.append(int(a))
+
+for g in G:
+   capture_finished[g] = False
+   first[g] = None
+   last[g] = None
 
 capture_time = 1e6 #In micro-seconds
 
 def cbf(GPIO, level, tick):
-   global capture_finished
-
    if first[GPIO] == None:
       first[GPIO] = tick
    elif pigpio.tickDiff(first[GPIO], tick) < capture_time:
@@ -29,28 +43,20 @@ def cbf(GPIO, level, tick):
             print(GPIO, pigpio.tickDiff(first[GPIO], tick), 0, "")
       last[GPIO] = tick
    else:
-      #capture_finished[GPIO] = True
-      capture_finished = True
+      capture_finished[GPIO] = True
 
-pi = pigpio.pi()
-
-if not pi.connected:
-   exit()
-
-if len(sys.argv) == 1:
-   G = range(0, 32)
-else:
-   G = []
-   for a in sys.argv[1:]:
-      G.append(int(a))
+print("GPIO", "Time(μs)", "Level", "Duration(μs)")
 
 for g in G:
-   cb.append(pi.callback(g, pigpio.EITHER_EDGE, cbf))
+   cb[g] = pi.callback(g, pigpio.EITHER_EDGE, cbf)
 
 try:
-   #while any(capture_finished) == False:
-   while capture_finished == False:
-      time.sleep(0.1)
+   start_time = time.time()
+   while all(capture_finished) == False:
+      if time.time() - start_time > timeout:
+         print("time out")
+         break
+      time.sleep(1)
 except KeyboardInterrupt:
    print("\nTidying up")
    for c in cb:
