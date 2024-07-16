@@ -47,6 +47,15 @@ capture_time = 1e6 #In micro-seconds
 def cbf(GPIO, level, tick):
    if first[GPIO] == None:
       first[GPIO] = tick
+      # When rising it changes from 0 to 1
+      if level == 1:
+         plot[GPIO].append((GPIO, 0, 1, ""))
+         print(GPIO, 0, 1, "")
+      
+      # When falling it changes from 1 to 0
+      else:
+         plot[GPIO].append((GPIO, 0, 0, ""))
+         print(GPIO, 0, 0, "")
    
    elif pigpio.tickDiff(first[GPIO], tick) < capture_time:
       dFirst = pigpio.tickDiff(first[GPIO], tick)
@@ -56,7 +65,7 @@ def cbf(GPIO, level, tick):
          
          # When rising it changes from 0 to 1
          if level == 1:
-            data[GPIO].append((GPIO, dFirst, 0, dLast))
+            data[GPIO].append((GPIO, dFirst, level, dLast))
             plot[GPIO].append((GPIO, dFirst, 0, dLast))
             plot[GPIO].append((GPIO, dFirst, 1, ""))
             print(GPIO, dFirst, 0, dLast)
@@ -64,7 +73,7 @@ def cbf(GPIO, level, tick):
          
          # When falling it changes from 1 to 0
          else:
-            data[GPIO].append((GPIO, dFirst, 1, dLast))
+            data[GPIO].append((GPIO, dFirst, level, dLast))
             plot[GPIO].append((GPIO, dFirst, 1, dLast))
             plot[GPIO].append((GPIO, dFirst, 0, ""))
             print(GPIO, dFirst, 1, dLast)
