@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
+import time
 import argparse
 import csv
+from pprint import pprint
 import statistics
 
 parser = argparse.ArgumentParser(description='Denoise and decode 433 MHz RF data.')
@@ -14,7 +16,7 @@ data = {}
 with open(args.file, newline='') as csvfile:
    csv_reader = csv.reader(csvfile, delimiter=';', quotechar='"')
    # Data has the following structure:
-   # GPIO; Time(μs); Level; Duration(μs)
+   # GPIO; Device name; Signal name; Time (μs); Level; Duration (μs)
 
    # Skip the header
    next(csv_reader)
@@ -39,7 +41,7 @@ for GPIO, data_GPIO in data.items():
    # Loop through the pulses captured
    for pulse in data_GPIO:
       # If the pulse is a preamble/trailing spacer pulse the codeword is complete, check and store
-      if 10000 < int(pulse[2]) < 15000:
+      if 10000 < int(pulse[5]) < 15000:
          # If the codeword is of the right length
          if len(codeword) == 24:
             # Append to the repeats
@@ -48,12 +50,12 @@ for GPIO, data_GPIO in data.items():
          codeword = []
       
       # If the pulse contains the data bit plus half the sync cycle
-      elif 1000 < int(pulse[2]) < 1500:
+      elif 1000 < int(pulse[5]) < 1500:
          # Add the bit value to the codeword
-         codeword.append (int(pulse[1]))
+         codeword.append (int(pulse[4]))
       
       # If the pulse is half the sync cycle
-      elif 300 < int(pulse[2]) < 500:
+      elif 300 < int(pulse[5]) < 500:
          # Ignore it basically
          continue
    
