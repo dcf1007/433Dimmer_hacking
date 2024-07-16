@@ -64,7 +64,7 @@ def cbf(GPIO, level, tick):
       
       # When rising it changes from 0 to 1
       if level == 1:
-         data[GPIO].append((GPIO, dFirst, level, dLast))
+         data[GPIO].append((GPIO, dFirst, 0, dLast))
          plot[GPIO].append((GPIO, dFirst, 0, dLast))
          plot[GPIO].append((GPIO, dFirst, 1, ""))
          print(GPIO, dFirst, 0, dLast)
@@ -72,7 +72,7 @@ def cbf(GPIO, level, tick):
       
       # When falling it changes from 1 to 0
       else:
-         data[GPIO].append((GPIO, dFirst, level, dLast))
+         data[GPIO].append((GPIO, dFirst, 1, dLast))
          plot[GPIO].append((GPIO, dFirst, 1, dLast))
          plot[GPIO].append((GPIO, dFirst, 0, ""))
          print(GPIO, dFirst, 1, dLast)
