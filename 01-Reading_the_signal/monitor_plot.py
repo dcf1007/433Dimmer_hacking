@@ -10,9 +10,11 @@
 import time
 import pigpio
 import argparse
+import csv
 
 parser = argparse.ArgumentParser(description='Monitor GPIO activity and print it or save it to a file.')
 parser.add_argument('GPIOs', metavar='N', type=int, nargs='*', help='GPIO pins to monitor, separated by spaces')
+parser.add_argument('--name', help='Prefix to use when saving the data')
 
 args = parser.parse_args()
 
@@ -106,3 +108,20 @@ except (KeyboardInterrupt, TimeoutError) as e:
    for c in cb.values():
       c.cancel()
    pi.stop()
+
+if args.name != None:
+   print("Saving the collected data")
+
+   with open(args.name + '_plot.csv', 'w', newline='') as csvfile:
+      csv_writer = csv.writer(csvfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+      csv_writer.writerow(["GPIO", "Time(μs)", "Level", "Duration(μs)"])
+      for GPIO in plot:
+         for plot_line in plot[GPIO]:
+            csv_writer.writerow(plot_line)
+   
+   with open(args.name + '_raw.csv', 'w', newline='') as csvfile:
+      csv_writer = csv.writer(csvfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+      csv_writer.writerow(["GPIO", "Time(μs)", "Level", "Duration(μs)"])
+      for GPIO in data:
+         for data_line in data[GPIO]:
+            csv_writer.writerow(data_line)
