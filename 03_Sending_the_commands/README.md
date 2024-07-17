@@ -1,4 +1,4 @@
-#
+# Sending the commands
 ## 2024-07-17
 Before starting, we bring the level low/high/low in intervals of 1s to make sure to reset any waiting in the receiver
  - Data structure 24[DDLH]14[LL][LH]
