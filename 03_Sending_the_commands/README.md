@@ -1,5 +1,13 @@
 # Sending the commands
-The transmitter module FS1000a
+
+Equipment used:
+  - Raspberry Pi 3B
+  - FS1000a
+  - The transmitter module Small Breadboard
+  - 1x RF LED dimmer
+  - Small LED strip
+
+
 ## 2024-07-17
 In order to send the commands, a very simple script 
 Before starting, we bring the level low/high/low in intervals of 1s to make sure to reset any waiting in the receiver
