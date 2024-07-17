@@ -147,12 +147,9 @@ We previously assumed that the clock period was positioned **after** each data p
 
 And if we assume the latter structure, the last [LH] could also be part of the preamble instead `[LH]14[LL]24[LHDD]`. In the same way, the 14[LL] could be part of the tail, and no preamble `24[LHDD][LH]14[LL]`.
 
-That leaves us with 6 possible valid data structures, from which 4 are unique combinations:
+That leaves us with 6 possible valid data structures, from which 4 are unique combinations: `[LH]14[LL]24[LHDD]`, `24[LHDD][LH]14[LL]` == `[LH]24[DDLH]14[LL]`, `14[LL]24[LHDD][LH]` == `14[LL][LH]24[DDLH]`, 
+`24[DDLH]14[LL][LH]`. The equivalent ones can have different ways to divide it, but same final package structure.
+<img src="/01-Reading_the_signal/packet_possibilities.svg" width="100%">
 
-`14[LL][LH]24[DDLH]` == `14[LL]24[LHDD][LH]` (different ways to structure, but same final package)
 
-`[LH]24[DDLH]14[LL]` == `24[LHDD][LH]14[LL]` (different ways to structure, but same final package)
 
-`24[DDLH]14[LL][LH]`
-
-`[LH]14[LL]24[LHDD]`
