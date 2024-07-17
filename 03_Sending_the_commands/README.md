@@ -1,5 +1,7 @@
 # Sending the commands
+The transmitter module FS1000a
 ## 2024-07-17
+In order to send the commands, a very simple script 
 Before starting, we bring the level low/high/low in intervals of 1s to make sure to reset any waiting in the receiver
  - Data structure 24[DDLH]14[LL][LH]
     - The _first command_ is **always** ignored, no matter if the initial idle level is high or low.
