@@ -2,8 +2,16 @@
 ## 2024-07-16 Registering and decoding all the buttons
 The next step is to register the signals of all the buttons of both remotes and decode them to 24-bit codewords.
 
-In order to capture the data we will use the script [monitor.py](/01-Reading_the_signal/monitor_plot.py) written to read the signals. The files [data_remotes_raw.csv](/02_Capturing_the_commands/data_remotes_raw.csv) (raw pulses) and [data_remotes_plot.csv](/02_Capturing_the_commands/data_remotes_plot.csv) (square waves for plotting) contain the acquired raw data.
-Once the signals have been acquired, we will split the different signal repetitions using the 12ms low signal, discard any blocks that contain more than 24 pulses and then do the mode of all the repetitions for each bit to filter any anomalies. The script that allows to do so is [decode.py](/02_Capturing_the_commands/decode.py). The file [data_remotes_decoded.csv](/02_Capturing_the_commands/data_remotes_decoded.csv) contains the 24-bit codewords obtained.
+In order to capture the data we will use the script [monitor_plot.py](/01-Reading_the_signal/monitor_plot.py) written to read the signals. The files [data_remotes_raw.csv](/02_Capturing_the_commands/data_remotes_raw.csv) (raw pulses) and [data_remotes_plot.csv](/02_Capturing_the_commands/data_remotes_plot.csv) (square waves for plotting) contain the acquired raw data.
+
+With the acquired raw pulse data, we will do the following processing using the script [decode.py](/02_Capturing_the_commands/decode.py):
+ - Split the different signal repeats using the 12ms low signal
+ - Append to the codeword the level of the pulses with 1.2ms (and ignore the 0.4 ms clock pulses)
+ - Discard any codeword repeats that contain more than 24 pulses
+ - Apply the mode to all the repetitions for each bit to filter any anomalies
+ - Store the consensus codeword
+
+ The file [data_remotes_decoded.csv](/02_Capturing_the_commands/data_remotes_decoded.csv) contains the 24-bit codewords obtained.
 
 |              | remote_a                       | remote_b                       |
 |--------------|--------------------------------|--------------------------------|
@@ -20,4 +28,6 @@ Once the signals have been acquired, we will split the different signal repetiti
 | speed_minus  | **0111100100000011**_00001101_ | **1110001001010100**_00001101_ |
 | pair_signal  | **0111100100000011**_00111111_ | **1110001001010100**_00111111_ |
 
-In bold you can see the remote ID and in italics the command
+In bold you can see the remote ID and in italics the command. All commands for both remotes match, whilst all the remote IDs match for all the commands of one remote.
+
+Next is:  [03 Sending the commands](/03_Sending_the_commands)
