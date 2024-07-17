@@ -149,7 +149,7 @@ And if we assume the latter structure, the last [LH] could also be part of the p
 
 That leaves us with 6 possible valid data structures, from which 4 are unique combinations: `[LH]14[LL]24[LHDD]`, `24[LHDD][LH]14[LL]` == `[LH]24[DDLH]14[LL]`, `14[LL]24[LHDD][LH]` == `14[LL][LH]24[DDLH]`, 
 `24[DDLH]14[LL][LH]`. The equivalent ones can have different ways to divide it, but same final package structure.
+
 <img src="/01-Reading_the_signal/packet_possibilities.svg" width="100%">
 
-
-
+The only way to know which one is the right packet structure is by sending a single packet of each of the combinations and hoping that the receiver only reacts to one of them. That will be dealt in the [3rd part: Sending the commands](/03_Sending_the_commands)
