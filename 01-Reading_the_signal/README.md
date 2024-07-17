@@ -152,4 +152,4 @@ That leaves us with 6 possible valid data structures, from which 4 are unique co
 
 <img src="/01-Reading_the_signal/packet_possibilities.svg" width="100%">
 
-The only way to know which one is the right packet structure is by sending a single packet of each of the combinations and hoping that the receiver only reacts to one of them. That will be dealt in the [3rd part: Sending the commands](/03_Sending_the_commands)
+The only way to know which one is the right packet structure is by sending a single packet of each of the combinations and hoping that the receiver only reacts to one of them. That will be dealt with in the [3rd part: Sending the commands](/03_Sending_the_commands)
