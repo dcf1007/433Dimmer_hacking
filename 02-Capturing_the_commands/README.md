@@ -1,4 +1,4 @@
-# Capturing the commands
+# 02 - Capturing the commands
 ## 2024-07-16 Registering and decoding all the buttons
 The next step is to register the signals of all the buttons of both remotes and decode them to 24-bit codewords.
 
