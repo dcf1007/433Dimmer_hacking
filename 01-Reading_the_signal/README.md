@@ -1,4 +1,4 @@
-# Reading the signal
+# 01 - Reading the signal
 <img align="right" src="/01-Reading_the_signal/P_20240711_232829.jpg" height=200>
 
 Equipment used:
