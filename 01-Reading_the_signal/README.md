@@ -107,13 +107,13 @@ After taking a careful look to the signal, it can't be Manchester as it does not
 
 <img src="https://github.com/user-attachments/assets/3257fa26-7c50-46ed-b010-aa060b38eaff" height=200>
 
-In Manchester code, the period for 1 is LH (the first half period is a low pulse and the second half period high pulse), and for 0 is HL (the first half period is a high pulse and the second half period is a low pulse). In this signal we can identify 3 different periods, HH (all high), LL (all low), LH (pulse low and second pulse high).
+In Manchester code, the period for 1 is `[LH]` (the first half period is a low pulse and the second half period high pulse), and for 0 is `[HL]` (the first half period is a high pulse and the second half period is a low pulse). In this signal we can identify 3 different periods, `[HH]` (all high), `[LL]` (all low), `[LH]` (pulse low and second pulse high).
 
 <img src="https://github.com/user-attachments/assets/43972934-5c6c-4257-ac76-95f428a97822" height=200>
 
-That reminded me of CMI (Coded Mark Inversion). In CMI the 0 is always LH while the 1 alternates between LL and HH each time it is coded. The signal of the remote would break the alternating rule.
+That reminded me of CMI (Coded Mark Inversion). In CMI the 0 is always `[LH]` while the 1 alternates between `[LL]` and `[HH]` each time it is coded. The signal of the remote would break the alternating rule.
 
-There seems to be a pattern in the remote signal though, after each period HH or LL comes a LH inconditionally.
+There seems to be a pattern in the remote signal though, after each period `[HH]` or `[LL]` comes a `[LH]` inconditionally.
 
 # 2024-07-15 Decoding the signal
 So following with the previous assumption, it would seem that after every period containing data there is a period with a clock tick before the next data period (every second period is a clock tick). So Period A = 0, Period B = 1 and Period C = Clock tick.
