@@ -52,6 +52,8 @@ The shortest pulse we managed to generate consisted of 2 repeats, leading and tr
 
 The pattern we got from the remotes was `[LH]24[DDLH]14[LL][LH]24[DDLH]` and idle low after (probably `14[LL]` was sent too). It corresponds to the structure that never reacted when sent individually. Sending it only once, it never reacts. Sending it twice, it always reacts.
 
+In conclusion, sending 2x(`[LH]24[DDLH]14[LL]`) is the minimum needed to make the receiver react, and works every single time, as well as any longer repeats. Even sending the pairing command with a new ID and then sending commands with that new ID also works.
+
 Now we have a way to send signals to the receiver. The last step is to monitor the messages from the RF remote and identify which button was pressed in real time.
 
 Next: [04 - Monitoring the commands](/04-Monitoring_the_commands)
