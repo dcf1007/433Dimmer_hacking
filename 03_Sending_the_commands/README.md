@@ -2,8 +2,8 @@
 
 Equipment used:
   - Raspberry Pi 3B
-  - FS1000a
-  - The transmitter module Small Breadboard
+  - The transmitter module: FS1000a
+  - Small Breadboard
   - 1x RF LED dimmer
   - Small LED strip
 
