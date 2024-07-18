@@ -1,5 +1,5 @@
 # Sending the commands
-<img align="right" src="/03_Sending_the_commands/P_20240718_065040.jpg" height=200>
+<img align="right" src="/03-Sending_the_commands/P_20240718_065040.jpg" height=200>
 
 Equipment used:
   - Raspberry Pi 3B
