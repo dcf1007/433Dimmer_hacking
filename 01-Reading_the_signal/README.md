@@ -80,7 +80,7 @@ G=17 l=0 d=1201         G=17 l=0 d=1199         G=17 l=0 d=1201
 G=17 l=1 d=457          G=17 l=1 d=458          G=17 l=1 d=457          
 G=17 l=0 d=399          G=17 l=0 d=398          G=17 l=0 d=399          
 ```
-Taking that script as basis, and With some modifications we wrote the script ([capture_data.py](/01-Reading_the_signal/capture_data.py)) which will both save the raw pulses detected and provide an extra file to plot the signal.
+Taking that script as basis, and With some modifications we wrote the script ([capture.py](/01-Reading_the_signal/capture.py)) which will both save the raw pulses detected and provide an extra file to plot the signal.
 
 <img src="/01-Reading_the_signal/raw_signal.svg" width="100%">
 
