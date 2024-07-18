@@ -5,8 +5,8 @@ import csv
 import statistics
 
 parser = argparse.ArgumentParser(description='Denoise and decode 433 MHz RF data.')
+parser.add_argument('--prefix', help='Prefix to use when saving the the 24-bit codewords')
 parser.add_argument('file_in', help='File containing the data')
-parser.add_argument('file_out', help='File to store the 24-bit codewords')
 
 args = parser.parse_args()
 
@@ -26,24 +26,21 @@ with open(args.file_in, newline='') as csvfile:
       # Select the name of the device as key of the main dict.
       # The value of the dict is another dict which will have as key
       # The command name and as value the level and duration of the pulse
-      data.setdefault(row[1], {}).setdefault(row[2], []).append(row[4:])
+      data.setdefault(row[1].strip(), {}).setdefault(row[2].strip(), []).append(row[4:])
 
 # Define a dictionary that will contain the codeword for each GPIO pin
 codewords = {}
 
-# Define lists to store allnames for the devices and signals to create the final table
-device_names = []
-signal_names = []
+# Define a set to store all names for the signals
+signal_names = set()
 
 # Loop through the different devices
 for device_name, device_data in data.items():
-   # Store the device name
-   device_names.append(device_name)
 
    # Loop through all the different signals for the device
    for signal_name, signal_pulses in device_data.items():
       # Store the signal name
-      signal_names.append(signal_name)
+      signal_names.add(signal_name)
 
       # Define a list to contain the different repeats of the signal captured
       codeword_repeats = []
@@ -73,12 +70,15 @@ for device_name, device_data in data.items():
             continue
       
       # Store the consensus of the codeword repeats for each device and signal
-      codewords.setdefault(device_name, {})[signal_name] = "".join([str(statistics.mode(x)) for x in zip(*codeword_repeats)])
-
+      codewords.setdefault(device_name, {})[signal_name] = str.join("", [str(statistics.mode(x)) for x in zip(*codeword_repeats)])
 
 # Save only the raw pulses registered
-with open(args.file_out, 'w', newline='') as csvfile:
+with open(args.prefix + '_decoded.csv', 'w', newline='') as csvfile:
    csv_writer = csv.writer(csvfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-   csv_writer.writerow(["", *[x for x in device_names]])
+
+   signal_names_len = max([len(name) for name in signal_names])
+   
+   csv_writer.writerow([str.rjust("", signal_names_len, " "), *[x.rjust(24, " ") for x in codewords.keys()]])
+
    for signal in signal_names:
-      csv_writer.writerow([signal, *[x.get(signal, " "*24) for x in codewords.values()]])
+      csv_writer.writerow([signal.rjust(signal_names_len, " "), *[x.get(signal, " "*24) for x in codewords.values()]])

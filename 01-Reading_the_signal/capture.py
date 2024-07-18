@@ -146,7 +146,8 @@ def cbf(GPIO, level, tick):
       capture_finished[GPIO] = True
 
 # Print the headers for the data that will be outputted
-print("GPIO", "Device name", "Signal name", "Time (μs)", "Level", "Duration (μs)", sep=';')
+headers = ["GPIO", "Device name", "Signal name", "Time (μs)", "Level", "Duration (μs)"]
+print(*headers, sep=';')
 
 # Add a callback for each defined GPIO pin
 for g in G:
@@ -174,21 +175,30 @@ except (KeyboardInterrupt, TimeoutError) as e:
 # Check wether a name to save the data has been specified
 if args.prefix != None:
    print("Saving the collected data")
+   # Calculate the max character length for eah column
+   col_width = [0]*len(headers)
+   for n in range(len(headers)):
+      col_width[n] = max(col_width[n], len(headers[n]))
+   
+   for GPIO in signal_plot:
+      for signal_plot_line in signal_plot[GPIO]:
+         for n in range(len(signal_plot_line)):
+            col_width[n] = max(col_width[n], len(str(signal_plot_line[n])))
 
    # Save the data for plotting the signal
    with open(args.prefix + '_plot.csv', 'w' if args.overwrite else 'a', newline='') as csvfile:
       csv_writer = csv.writer(csvfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
       if args.overwrite:
-         csv_writer.writerow(["GPIO", "Device name", "Signal name", "Time (μs)", "Level", "Duration (μs)"])
+         csv_writer.writerow(headers)
       for GPIO in signal_plot:
          for signal_plot_line in signal_plot[GPIO]:
-            csv_writer.writerow(signal_plot_line)
+            csv_writer.writerow([str(signal_plot_line[n]).rjust(col_width[n], " ") for n in range(len(col_width))])
    
    # Save only the raw pulses registered
    with open(args.prefix + '_raw.csv', 'w' if args.overwrite else 'a', newline='') as csvfile:
       csv_writer = csv.writer(csvfile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
       if args.overwrite:
-         csv_writer.writerow(["GPIO", "Device name", "Signal name", "Time (μs)", "Level", "Duration (μs)"])
+         csv_writer.writerow(headers)
       for GPIO in signal_data:
          for signal_data_line in signal_data[GPIO]:
-            csv_writer.writerow(signal_data_line)
+            csv_writer.writerow([str(signal_data_line[n]).rjust(col_width[n], " ") for n in range(len(col_width))])
