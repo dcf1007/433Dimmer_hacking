@@ -1,58 +1,80 @@
 #!/usr/bin/env python
 
+import argparse
 import pigpio
 import time
 
-frequency = 1200
-pulse_width = 5e5/frequency # In micro-seconds. 1/2 clock cycle. FLOAT
-codeword = "111111111111111100000001" # The 24-bit codeword to send
-nr_repeats = 16 # Set the number of times the signal will be sent
+parser = argparse.ArgumentParser(description='Encode 433 MHz RF data.')
+parser.add_argument('GPIO', type=int, nargs=1, help='GPIO pins to send the signal')
+parser.add_argument('--codeword', required=True, help='24-bit codeword in binary')
+parser.add_argument('-f', '--frequency', type=int, default=1200, help='Clock frequancy')
+parser.add_argument('-r', '--repeats', type=int, default=16, help='Number of times the signal gets sent in a row')
+#parser.add_argument('-s', '--structure', default="[LH]24[DDLH]14[LL]", help='Structure of the data packet to send the signal')
+
+args = parser.parse_args()
+
+# Define GPIO pin
+gpio_pin = args.GPIO
+
+# Set the clock frequency
+frequency = args.frequency
+
+# Calculate the pulse width (1/2 clock cycle) for the frequency.
+# In micro-seconds. FLOAT
+pulse_width = 5e5/frequency 
+
+# Set the 24-bit codeword to send.
+# Check it is 24-bit and in binary
+codeword = args.codeword if (len(args.codeword) == 24 and set(args.codeword) <= set(["0", "1"])) else exit("Not a valid codeword")
+
+# Set the number of times the signal will be sent
+nr_repeats = args.repeats 
 
 # Initialize pigpio
 pi = pigpio.pi()
 
+# Exit if the daemon is not in execution
 if not pi.connected:
-    exit()
-
-# Define GPIO pin
-gpio_pin = 17  # Example GPIO pin
-
-# The three different types of periods we can have
-HH_period  = [pigpio.pulse(1<<gpio_pin, 0, int(2*pulse_width)), ]
-LL_period  = [pigpio.pulse(0, 1<<gpio_pin, int(2*pulse_width)), ]
-LH_period = [pigpio.pulse(0, 1<<gpio_pin, int(pulse_width)), pigpio.pulse(1<<gpio_pin, 0, int(pulse_width))]
+   exit()
 
 
-# List to store the sequence of pulses to send
-pulse_signal = []
+# Define the signals
+def H_signal(nr_pulses=1):
+   return pigpio.pulse(1<<gpio_pin, 0, int(pulse_width * nr_pulses))
 
-# Data packet structure: [LH]24[DDLH]14[LL]
+def L_signal(nr_pulses=1):
+   pigpio.pulse(0, 1<<gpio_pin, int(pulse_width * nr_pulses))
+
+# List to store the sequence of signals to send
+signal = []
 
 # Add the [LH] period
-pulse_signal.extend(LH_period)
+signal.extend([L_signal(), H_signal()])
 
 # Add the 24[DDLH] blocks
 for bit in codeword:
     if bit == "1":
-        pulse_signal.extend(HH_period) # Data period DD
+        signal.append(H_signal(2)) # Data period DD
     else:
-        pulse_signal.extend(LL_period) # Data period DD
+        signal.append(L_signal(2)) # Data period DD
     
-    pulse_signal.extend(LH_period) # Clock period LH
+    signal.extend([L_signal(), H_signal()]) # Clock period LH
 
 # Add the 14[LL] block
-pulse_signal.extend(LL_period*14)
+signal.append(L_signal(14))
 
 # Clear any existing waveforms
 pi.wave_clear()  
 
 # Create a new waveform using the pulse sequence
-pi.wave_add_generic(pulse_signal)
+pi.wave_add_generic(signal)
 
 # Get the waveform ID
 signal_wave_id = pi.wave_create()
 
 # Create the chain that will send the signal repeated several times
+# 255,0 -> Start of a loop
+# 255,1,<nr>,0 -> End of a loop of <nr> repeats
 signal_chain = [255, 0, signal_wave_id, 255, 1, nr_repeats, 0]
 
 # Send the waveform containing the signal
