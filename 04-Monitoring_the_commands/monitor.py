@@ -4,11 +4,34 @@ import time
 import pigpio
 import argparse
 import statistics
+import csv
+from pprint import pprint
 
 parser = argparse.ArgumentParser(description='Monitor GPIO activity and print it or save it to a file.')
-parser.add_argument('GPIOs', metavar='N', type=int, nargs='+', help='GPIO pins to monitor, separated by spaces')
+parser.add_argument('GPIOs', metavar='N', type=int, nargs='*', help='GPIO pins to monitor, separated by spaces')
+parser.add_argument('file_in', help='File containing the data')
 
 args = parser.parse_args()
+
+data = {}
+
+with open(args.file_in, newline='') as csvfile:
+   csv_reader = csv.reader(csvfile, delimiter=';', quotechar='"')
+   # Data has the following structure:
+   #             ; Remote 1; Remote 2; Remote N; ...
+   # Command name; 24-bit  ; 24-bit  ; 24-bit  ; ...
+
+   # Store the remote names (header)
+   remote_names = next(csv_reader)[1:]
+   print(remote_names)
+   # Loop through the rows of data
+   for row in csv_reader:
+      print(row)
+      command_name = row.pop(0).strip()
+      print(row)
+      for i, col in enumerate(row):
+         data.setdefault(row[i].strip()[0:16], {})["name"] = remote_names[i].strip()
+         data[row[i].strip()[0:16]][row[i].strip()[16:]] = command_name.strip()
 
 # Define the variables needed
 pi = pigpio.pi()
@@ -49,7 +72,7 @@ def cbf(GPIO, level, tick):
       
       if (dtick_last > 11000) and (13000 > dtick_last) and (level == 1):
          if data_capture[GPIO] == True:
-            print("Preample. Repeat of data")
+            #print("Preample. Repeat of data")
 
             # Check wether the previously received data packet is intact
             if len(signal_data[GPIO][-1]) != 24:
@@ -58,11 +81,13 @@ def cbf(GPIO, level, tick):
                # Delete the contents of the last repeat
                signal_data[GPIO][-1] = []
             else:
-               print(str.join("", [str(statistics.mode(x)) for x in zip(*signal_data[GPIO])]))
+               codeword = str.join("", [str(statistics.mode(x)) for x in zip(*signal_data[GPIO])])
+               #print(codeword)
+               print(data[codeword[0:16]]["name"], data[codeword[0:16]][codeword[16:]])
                # Create a new entry in the list to append the new repeat
                signal_data[GPIO].append([])
          else:
-            print("Preamble. Init data capture")
+            #print("Preamble. Init data capture")
 
             # Signal that valid data is being captured
             data_capture[GPIO] = True
@@ -74,12 +99,15 @@ def cbf(GPIO, level, tick):
          #print("Data bit received")
 
          # Store the data bit in the dictionary
-         signal_data[GPIO][-1].append(level)
+         signal_data[GPIO][-1].append(1-level)
 
       elif ((dtick_last > 13000) or (350 > dtick_last)) and (data_capture[GPIO] == True):
-         print("Not data anymore")
+         #print("Not data anymore")
          signal_data[GPIO].pop()
-         print(str.join("", [str(statistics.mode(x)) for x in zip(*signal_data[GPIO])]))
+         if len(signal_data[GPIO]) > 0:
+            codeword = str.join("", [str(statistics.mode(x)) for x in zip(*signal_data[GPIO])])
+            #print(codeword)
+            print(data[codeword[0:16]]["name"], data[codeword[0:16]][codeword[16:]])
          data_capture[GPIO] = False
       
       tick_last[GPIO] = tick
