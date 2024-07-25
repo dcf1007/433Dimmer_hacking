@@ -5,7 +5,6 @@ import pigpio
 import argparse
 import statistics
 import csv
-from pprint import pprint
 
 parser = argparse.ArgumentParser(description='Monitor GPIO activity and print it or save it to a file.')
 parser.add_argument('GPIOs', metavar='N', type=int, nargs='*', help='GPIO pins to monitor, separated by spaces')
@@ -70,6 +69,8 @@ def cbf(GPIO, level, tick):
       # Calculate the delta for the starting time and the pulse length
       dtick_last = pigpio.tickDiff(tick_last[GPIO], tick)
       
+      # Check if it was a prelude pulse (12ms and low level)
+      # The interrupt detects edge changes, so if level is 1 means it has been at 0 until now
       if (dtick_last > 11000) and (13000 > dtick_last) and (level == 1):
          if data_capture[GPIO] == True:
             #print("Preample. Repeat of data")
@@ -99,7 +100,7 @@ def cbf(GPIO, level, tick):
          #print("Data bit received")
 
          # Store the data bit in the dictionary
-         signal_data[GPIO][-1].append(1-level)
+         signal_data[GPIO][-1].append(1 - level)
 
       elif ((dtick_last > 13000) or (350 > dtick_last)) and (data_capture[GPIO] == True):
          #print("Not data anymore")
