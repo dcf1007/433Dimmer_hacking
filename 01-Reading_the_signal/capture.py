@@ -107,16 +107,13 @@ def cbf(GPIO, level, tick):
 
       # As it is the first edge, we can't calculate pulse time yet
       # The time is 0 as this edge is the starting point
-       
-      # When edge rising it changes from 0 to 1
-      if level == 1:
-         signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], 0, 1, ""))
-         print(GPIO, device_names[GPIO], signal_names[GPIO], 0, 1, "", sep=';')
-      
-      # When edge falling it changes from 1 to 0
-      else:
-         signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], 0, 0, ""))
-         print(GPIO, device_names[GPIO], signal_names[GPIO], 0, 0, "", sep=';')
+      # We detect edge changes. When level is 1 means that the edge rised and changed from 0 to 1
+      # therefore the value of the pulse that just finished is the opposite to the level value registered
+      # and the new starting pulse is the level registered
+
+      # For the pulse starting
+      signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], 0, level, ""))
+      print(GPIO, device_names[GPIO], signal_names[GPIO], 0, level, "", sep=';')
    
    # Check wether we are still inside the capturing time window
    elif pigpio.tickDiff(tick_first[GPIO], tick) < 1e6 * args.capture_time:
@@ -124,21 +121,16 @@ def cbf(GPIO, level, tick):
       dtick_first = pigpio.tickDiff(tick_first[GPIO], tick)
       dtick_last = pigpio.tickDiff(tick_last[GPIO], tick)
       
-      # When rising it changes from 0 to 1
-      if level == 1:
-         signal_data[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 0, dtick_last))
-         signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 0, dtick_last))
-         signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1, ""))
-         print(GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 0, dtick_last, sep=';')
-         print(GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1, "", sep=';')
+      # For the pusle that just finished
+      signal_data[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1 - level, dtick_last))
+      signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1 - level, dtick_last))
+      print(GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1 - level, dtick_last, sep=';')
+
+      # For the pulse starting
+      signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, level, ""))
+      print(GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, level, "", sep=';')
       
-      # When falling it changes from 1 to 0
-      else:
-         signal_data[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1, dtick_last))
-         signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1, dtick_last))
-         signal_plot[GPIO].append((GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 0, ""))
-         print(GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 1, dtick_last, sep=';')
-         print(GPIO, device_names[GPIO], signal_names[GPIO], dtick_first, 0, "", sep=';')
+      # Register this tick as last
       tick_last[GPIO] = tick
    
    # If it's not the first edge and we are out of the capturing window
