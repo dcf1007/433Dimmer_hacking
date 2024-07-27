@@ -43,7 +43,7 @@ def H_signal(nr_pulses=1):
    return pigpio.pulse(1<<gpio_pin, 0, int(pulse_width * nr_pulses))
 
 def L_signal(nr_pulses=1):
-   pigpio.pulse(0, 1<<gpio_pin, int(pulse_width * nr_pulses))
+   return pigpio.pulse(0, 1<<gpio_pin, int(pulse_width * nr_pulses))
 
 # List to store the sequence of signals to send
 signal = []
