@@ -5,7 +5,7 @@ import pigpio
 import time
 
 parser = argparse.ArgumentParser(description='Encode 433 MHz RF data.')
-parser.add_argument('GPIO', type=int, nargs=1, help='GPIO pins to send the signal')
+parser.add_argument('GPIO', type=int, help='GPIO pins to send the signal')
 parser.add_argument('--codeword', required=True, help='24-bit codeword in binary')
 parser.add_argument('-f', '--frequency', type=int, default=1200, help='Clock frequancy')
 parser.add_argument('-r', '--repeats', type=int, default=16, help='Number of times the signal gets sent in a row')
