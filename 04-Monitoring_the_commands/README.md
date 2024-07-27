@@ -15,4 +15,8 @@ The script is now able to continuously monitor, identify the start of a data pac
 ## 2024-07-24 Receiving and identifying commands in real time
 Removed creating the consensus for the repeats. There are some buttons which should react to every repeat. For example if we keep the brightness buttons pressed. 
 
-Implemented the functionality to identify a saved remote and check the received command against the list of saved commands generated with [decode.py](/02-Capturing_the_commands/decode.py)
+Implemented the functionality to identify a saved remote and check the received command against the list of saved commands generated with [decode.py](/02-Capturing_the_commands/decode.py).
+
+At this point we are able to read the file which contains the remote IDs as well as the commands for each remote, monitor in real time the 433 MHz RF, catch any packages coming from those remotes and identify the command transmitted in the data package. Now we need to be able to execute an action over the LED accordingly to the command received.
+
+Next: [05 - Hardware interfacing](/05-Hardware_interfacing)
