@@ -12,6 +12,6 @@ The resulting script is [monitor.py](/04-Monitoring_the_commands/monitor.py)
 ## 2024-07-23 Receiving commands in real time
 The script is now able to continuously monitor, identify the start of a data packet, receive repeats and generate a consensus code for the received signal in real time
 
-## 2024-07-23 Receiving and identifying commands in real time
+## 2024-07-24 Receiving and identifying commands in real time
 Removed creating the consensus for the repeats. There are some buttons which should react to every repeat. For example if we keep the brightness buttons pressed. 
 Implemented the functionality to identify a saved remote and check the received command against the list of saved commands generated with [decode.py](/02-Capturing_the_commands/decode.py)
