@@ -2,21 +2,24 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   height="202.88"
+   height="252"
    version="1.1"
-   width="550.38947"
+   width="795.33313"
    style="overflow:hidden"
-   id="svg48"
-   sodipodi:docname="unidirectional_voltage_level_shifter.svg"
+   id="svg78"
+   sodipodi:docname="unidirectional_voltage_level_shifter_v2.svg"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs48" />
+     id="defs78">
+    <defs
+       id="defs1" />
+  </defs>
   <sodipodi:namedview
-     id="namedview48"
+     id="namedview78"
      pagecolor="#ffffff"
      bordercolor="#000000"
      borderopacity="0.25"
@@ -24,859 +27,1436 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     showgrid="false"
-     inkscape:zoom="1.7029488"
-     inkscape:cx="316.80341"
-     inkscape:cy="96.597148"
+     inkscape:zoom="1.3564665"
+     inkscape:cx="434.95361"
+     inkscape:cy="142.65004"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg48" />
+     inkscape:current-layer="g84-3" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 287.59459,75.200003 v -40"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     class="cl_wire"
+     style="stroke-linecap:round"
+     id="path1" />
+  <circle
+     cx="287.5946"
+     cy="75.199997"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle1" />
+  <circle
+     cx="287.5946"
+     cy="35.199993"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle2" />
+  <rect
+     x="283.5946"
+     y="35.199993"
+     width="8"
+     height="40"
+     r="0"
+     rx="0"
+     ry="0"
+     fill="#ffffff"
+     stroke="#000000"
+     opacity="0"
+     class="cl_wire"
+     style="opacity:0;stroke-width:0.8"
+     id="rect2" />
+  <circle
+     cx="287.5946"
+     cy="75.199997"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle3" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 247.59459,195.2 h 210"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     class="cl_wire"
+     style="stroke-linecap:round"
+     id="path4"
+     sodipodi:nodetypes="cc" />
+  <circle
+     cx="247.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle5" />
+  <circle
+     cx="347.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle6" />
+  <rect
+     x="247.5946"
+     y="192.8"
+     width="100"
+     height="8"
+     r="0"
+     rx="0"
+     ry="0"
+     fill="#ffffff"
+     stroke="#000000"
+     opacity="0"
+     class="cl_wire"
+     style="opacity:0;stroke-width:0.8"
+     id="rect6" />
+  <circle
+     cx="247.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle7" />
+  <circle
+     cx="347.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle8" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 287.59459,195.2 v -40"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     class="cl_wire"
+     style="stroke-linecap:round"
+     id="path8" />
+  <circle
+     cx="287.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle9" />
+  <circle
+     cx="287.5946"
+     cy="155.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle10" />
+  <rect
+     x="283.5946"
+     y="155.2"
+     width="8"
+     height="40"
+     r="0"
+     rx="0"
+     ry="0"
+     fill="#ffffff"
+     stroke="#000000"
+     opacity="0"
+     class="cl_wire"
+     style="opacity:0;stroke-width:0.8"
+     id="rect10" />
+  <circle
+     cx="287.5946"
+     cy="195.2"
+     r="2.4000001"
+     fill="#3b4449"
+     stroke="#3b4449"
+     id="circle11"
+     style="stroke-width:0.8" />
+  <circle
+     cx="287.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle12" />
+  <circle
+     cx="287.5946"
+     cy="155.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle13" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 167.59459,195.2 h -40"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     class="cl_wire"
+     style="stroke-linecap:round"
+     id="path13" />
+  <circle
+     cx="167.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle14" />
+  <circle
+     cx="127.59461"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle15" />
+  <rect
+     x="127.59461"
+     y="192.8"
+     width="40"
+     height="8"
+     r="0"
+     rx="0"
+     ry="0"
+     fill="#ffffff"
+     stroke="#000000"
+     opacity="0"
+     class="cl_wire"
+     style="opacity:0;stroke-width:0.8"
+     id="rect15" />
+  <circle
+     cx="167.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle16" />
+  <circle
+     cx="127.59461"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle17" />
+  <path
+     fill="#ffffff"
+     stroke="#ffffff"
+     d="m 231.59459,163.2 v 24 h -48 v -24"
+     opacity="0"
+     style="opacity:0;stroke-width:0.8"
+     id="path17" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 207.59459,155.2 v 10"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path18" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 177.59459,165.2 h 60"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path19" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 221.3446,165.2 16.24999,30"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path20" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 247.59459,195.2 h -10"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path21" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 193.84457,165.2 -16.24998,30"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path22" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 167.59459,195.2 h 10"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path23" />
+  <path
+     fill="#3b4449"
+     stroke="none"
+     d="m 182.01457,177.54499 c -0.41832,6.975 -1.35664,8.59833 -4.41998,17.65501 6.31166,-7.18168 7.2483,-8.80501 13.07998,-12.65501 -3.87168,-0.79334 -6.03832,-2.04333 -8.66,-5"
+     id="path24"
+     style="stroke-width:0.8" />
+  <text
+     x="207.5946"
+     y="202.88002"
+     text-anchor="middle"
+     font="10px &quot;Arial&quot;"
+     stroke="none"
+     fill="#3b4449"
+     font-size="16px"
+     font-weight="bold"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:middle;stroke-width:0.8"
+     id="text24"><tspan
+       dy="5.7599998"
+       id="tspan24"
+       style="stroke-width:0.8">Q1</tspan></text>
+  <circle
+     cx="207.5946"
+     cy="155.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle24" />
+  <circle
+     cx="247.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle25" />
+  <circle
+     cx="167.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle26" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 207.59459,55.200003 v -20"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     class="cl_wire"
+     style="stroke-linecap:round"
+     id="path26" />
+  <circle
+     cx="207.5946"
+     cy="55.199993"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle27" />
+  <circle
+     cx="207.5946"
+     cy="35.199993"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle28" />
+  <rect
+     x="203.5946"
+     y="35.199993"
+     width="8"
+     height="20"
+     r="0"
+     rx="0"
+     ry="0"
+     fill="#ffffff"
+     stroke="#000000"
+     opacity="0"
+     class="cl_wire"
+     style="opacity:0;stroke-width:0.8"
+     id="rect28" />
+  <circle
+     cx="207.5946"
+     cy="55.199993"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle29" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="M 207.59459,72.699993 V 55.200003"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path30" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="M 207.59459,117.70002 V 135.2"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path31" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 207.59459,72.699993 -8.75,3.75 17.5,7.49999 -17.5,7.5 17.5,7.50004 -17.5,7.499997 17.5,7.5 -8.75,3.75"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path32" />
+  <path
+     fill="#ffffff"
+     stroke="#ffffff"
+     d="m 197.19459,71.200003 h 20.8 V 119.2 h -20.8 z"
+     opacity="0"
+     style="opacity:0;stroke-width:0.8"
+     id="path33" />
+  <text
+     x="222.5946"
+     y="95.199997"
+     text-anchor="start"
+     font="10px &quot;Arial&quot;"
+     stroke="none"
+     fill="#3b4449"
+     font-size="16px"
+     font-weight="bold"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;stroke-width:0.8"
+     id="text34"><tspan
+       dy="-1.9200001"
+       id="tspan33"
+       style="stroke-width:0.8">R1</tspan><tspan
+       dy="15.360001"
+       x="222.5946"
+       id="tspan34"
+       style="stroke-width:0.8">1 kΩ</tspan></text>
+  <circle
+     cx="207.5946"
+     cy="55.199993"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle34" />
+  <circle
+     cx="207.5946"
+     cy="135.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle35" />
   <g
-     style="-webkit-tap-highlight-color:rgba(0, 0, 0, 0)"
-     transform="matrix(0.8,0,0,0.8,-1332.085,-924.8)"
-     id="g48">
-    <desc
-       id="desc1">Created with Raphaël 2.0.0</desc>
-    <defs
-       id="defs1" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 1875,1400 h -50"
-       stroke-width="2"
-       stroke-linecap="round"
-       class="cl_wire"
-       style="stroke-linecap:round"
-       id="path1" />
+     id="g83"
+     transform="translate(-374.50354,-301.35256)">
     <circle
-       cx="1875"
-       cy="1400"
-       r="5"
+       cx="662.09814"
+       cy="336.55255"
+       r="4"
        fill="#999999"
        stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle1" />
-    <circle
-       cx="1825"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle2" />
-    <rect
-       x="1825"
-       y="1397"
-       width="50"
-       height="10"
-       r="0"
-       rx="0"
-       ry="0"
-       fill="#ffffff"
-       stroke="#000000"
-       opacity="0"
-       class="cl_wire"
-       style="opacity:0"
-       id="rect2" />
-    <circle
-       cx="1875"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle3" />
-    <circle
-       cx="1825"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
+       stroke-width="1.6"
        opacity="0"
        style="opacity:0"
        id="circle4" />
     <path
-       fill="#ffffff"
-       stroke="#ffffff"
-       d="M 10,20 H 40 V 80 H 10"
-       opacity="0"
-       transform="rotate(90,312.5,1662.5)"
-       style="opacity:0"
-       id="path4" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 0,50 H 12.5"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="rotate(90,312.5,1662.5)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path5" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 12.5,87.5 v -75"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="rotate(90,312.5,1662.5)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path6" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 12.5,32.81249 50,12.5"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="rotate(90,312.5,1662.5)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path7" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 50,0 V 12.5"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="rotate(90,312.5,1662.5)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path8" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 12.5,67.18752 50,87.5"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="rotate(90,312.5,1662.5)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path9" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 50,100 V 87.5"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="rotate(90,312.5,1662.5)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path10" />
-    <path
-       fill="#3b4449"
-       stroke="none"
-       d="M 27.931232,81.97502 C 36.649984,82.49792 38.679151,83.67082 50,87.5 41.0229,79.61042 38.993733,78.43962 34.181237,71.15002 c -0.991672,4.8396 -2.554158,7.5479 -6.250005,10.825"
-       transform="rotate(90,312.5,1662.5)"
-       id="path11" />
-    <text
-       x="0"
-       y="0"
-       text-anchor="middle"
-       font="10px &quot;Arial&quot;"
-       stroke="none"
-       fill="#3b4449"
-       font-size="16px"
-       font-weight="bold"
-       transform="translate(1925,1409.6)"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:Arial;text-anchor:middle"
-       id="text11"><tspan
-         id="tspan11">2N2222</tspan></text>
-    <circle
-       cx="1925"
-       cy="1350"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle11" />
-    <circle
-       cx="1975"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle12" />
-    <circle
-       cx="1875"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle13" />
-    <path
        fill="#3b4449"
        stroke="#3b4449"
-       d="M 0,50 12,34.894737 h 17.721617 z"
-       stroke-width="2"
+       d="m 662.09813,336.55256 9.6,-12.28235 h 14.22682 z"
+       stroke-width="1.6"
        stroke-linejoin="round"
-       transform="translate(1925,1150)"
        style="stroke-linejoin:round"
-       id="path13" />
+       id="path35" />
     <rect
-       x="7"
-       y="7"
-       width="53.164852"
-       height="27.894737"
+       x="667.69812"
+       y="302.15256"
+       width="42.680473"
+       height="22.117647"
        r="5"
-       rx="5"
-       ry="5"
+       rx="4"
+       ry="4"
        fill="#ffffff"
        stroke="#3b4449"
-       stroke-width="2"
-       transform="translate(1925,1150)"
-       id="rect13" />
-    <text
-       x="12"
-       y="22"
-       text-anchor="start"
-       font="10px &quot;Arial&quot;"
-       stroke="none"
-       fill="#3b4449"
-       font-size="16px"
-       font-weight="bold"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:Arial;text-anchor:start"
-       transform="translate(1925,1150)"
-       id="text13"><tspan
-         dy="7.1999998"
-         id="tspan13">+3.3V</tspan></text>
-    <circle
-       cx="1925"
-       cy="1200"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle14" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 1925,1225 v -25"
-       stroke-width="2"
-       stroke-linecap="round"
-       class="cl_wire"
-       style="stroke-linecap:round"
-       id="path14" />
-    <circle
-       cx="1925"
-       cy="1225"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle15" />
-    <circle
-       cx="1925"
-       cy="1200"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle16" />
-    <rect
-       x="1920"
-       y="1200"
-       width="10"
-       height="25"
-       r="0"
-       rx="0"
-       ry="0"
-       fill="#ffffff"
-       stroke="#000000"
-       opacity="0"
-       class="cl_wire"
-       style="opacity:0"
-       id="rect16" />
-    <circle
-       cx="1925"
-       cy="1225"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle17" />
-    <circle
-       cx="1925"
-       cy="1200"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle18" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 25,21.87499 V 0"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="translate(1900,1225)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path18" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 25,78.12502 V 100"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="translate(1900,1225)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path19" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 25,21.87499 -10.937496,4.6875 21.874991,9.37499 -21.874991,9.375 21.874991,9.37504 -21.874991,9.375 21.874991,9.375 L 25,78.12502"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="translate(1900,1225)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path20" />
-    <path
-       fill="#ffffff"
-       stroke="#ffffff"
-       d="M 12,20 H 38 V 80 H 12 Z"
-       opacity="0"
-       transform="translate(1900,1225)"
-       style="opacity:0"
-       id="path21" />
-    <text
-       x="0"
-       y="0"
-       text-anchor="start"
-       font="10px &quot;Arial&quot;"
-       stroke="none"
-       fill="#3b4449"
-       font-size="16px"
-       font-weight="bold"
-       transform="translate(1943.75,1275)"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:Arial;text-anchor:start"
-       id="text22"><tspan
-         dy="-2.4000001"
-         id="tspan21">R1</tspan><tspan
-         dy="19.200001"
-         x="0"
-         id="tspan22">1 kΩ</tspan></text>
-    <circle
-       cx="1925"
-       cy="1225"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle22" />
-    <circle
-       cx="1925"
-       cy="1325"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle23" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 2025,1250 v -50"
-       stroke-width="2"
-       stroke-linecap="round"
-       class="cl_wire"
-       style="stroke-linecap:round"
-       id="path23" />
-    <circle
-       cx="2025"
-       cy="1250"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle24" />
-    <circle
-       cx="2025"
-       cy="1200"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle25" />
-    <rect
-       x="2020"
-       y="1200"
-       width="10"
-       height="50"
-       r="0"
-       rx="0"
-       ry="0"
-       fill="#ffffff"
-       stroke="#000000"
-       opacity="0"
-       class="cl_wire"
-       style="opacity:0"
-       id="rect25" />
-    <path
-       fill="#3b4449"
-       stroke="#3b4449"
-       d="M 0,50 12,34.647058 h 17.783531 z"
-       stroke-width="2"
-       stroke-linejoin="round"
-       transform="translate(2025,1150)"
-       style="stroke-linejoin:round"
-       id="path25" />
-    <rect
-       x="7"
-       y="7"
-       width="53.350594"
-       height="27.647058"
-       r="5"
-       rx="5"
-       ry="5"
-       fill="#ffffff"
-       stroke="#3b4449"
-       stroke-width="2"
-       transform="translate(2025,1150)"
-       id="rect26" />
-    <text
-       x="12"
-       y="22"
-       text-anchor="start"
-       font="10px &quot;Arial&quot;"
-       stroke="none"
-       fill="#3b4449"
-       font-size="16px"
-       font-weight="bold"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:Arial;text-anchor:start"
-       transform="translate(2025,1150)"
-       id="text26"><tspan
-         dy="7.1999998"
-         id="tspan26">+12 V</tspan></text>
-    <circle
-       cx="2025"
-       cy="1200"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="1"
-       style="opacity:1"
-       id="circle26" />
-    <circle
-       cx="2025"
-       cy="1250"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle27" />
-    <circle
-       cx="2025"
-       cy="1200"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle28" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 2025,1400 v -50"
-       stroke-width="2"
-       stroke-linecap="round"
-       class="cl_wire"
-       style="stroke-linecap:round"
-       id="path28" />
-    <circle
-       cx="2025"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle29" />
-    <circle
-       cx="2025"
-       cy="1350"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle30" />
-    <rect
-       x="2020"
-       y="1350"
-       width="10"
-       height="50"
-       r="0"
-       rx="0"
-       ry="0"
-       fill="#ffffff"
-       stroke="#000000"
-       opacity="0"
-       class="cl_wire"
-       style="opacity:0"
-       id="rect30" />
-    <circle
-       cx="2025"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle31" />
-    <circle
-       cx="2025"
-       cy="1350"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle32" />
-    <circle
-       cx="2025"
-       cy="1400"
-       r="3"
-       fill="#3b4449"
-       stroke="#3b4449"
-       id="circle33" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 1925,1350 v -25"
-       stroke-width="2"
-       stroke-linecap="round"
-       class="cl_wire"
-       style="stroke-linecap:round"
-       id="path33" />
-    <circle
-       cx="1925"
-       cy="1350"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle34" />
-    <circle
-       cx="1925"
-       cy="1325"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle35" />
-    <rect
-       x="1920"
-       y="1325"
-       width="10"
-       height="25"
-       r="0"
-       rx="0"
-       ry="0"
-       fill="#ffffff"
-       stroke="#000000"
-       opacity="0"
-       class="cl_wire"
-       style="opacity:0"
+       stroke-width="1.6"
        id="rect35" />
+    <text
+       x="671.87585"
+       y="312.05139"
+       text-anchor="start"
+       font="10px &quot;Arial&quot;"
+       stroke="none"
+       fill="#3b4449"
+       font-size="16px"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;stroke-width:0.8"
+       id="text35"><tspan
+         dy="5.7599998"
+         id="tspan35"
+         style="stroke-width:0.8">+12 V</tspan></text>
     <circle
-       cx="1925"
-       cy="1350"
-       r="5"
+       cx="662.09814"
+       cy="336.55255"
+       r="4"
        fill="#999999"
        stroke="#3b4449"
-       stroke-width="2"
+       stroke-width="1.6"
        opacity="0"
        style="opacity:0"
        id="circle36" />
+  </g>
+  <g
+     id="g83-3"
+     style="overflow:hidden"
+     transform="translate(83.472865,-158.05159)">
     <circle
-       cx="1925"
-       cy="1325"
-       r="5"
+       cx="662.09814"
+       cy="336.55255"
+       r="4"
        fill="#999999"
        stroke="#3b4449"
-       stroke-width="2"
+       stroke-width="1.6"
        opacity="0"
        style="opacity:0"
-       id="circle37" />
+       id="circle4-5" />
     <path
-       fill="none"
+       fill="#3b4449"
        stroke="#3b4449"
-       d="m 1975,1400 h 125"
-       stroke-width="2"
-       stroke-linecap="round"
-       class="cl_wire"
-       style="stroke-linecap:round"
-       id="path37" />
-    <circle
-       cx="1975"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle38" />
-    <circle
-       cx="2100"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       class="cl_wire"
-       stroke-width="2"
-       style="display:none"
-       id="circle39" />
+       d="m 662.09813,336.55256 9.6,-12.28235 h 14.22682 z"
+       stroke-width="1.6"
+       stroke-linejoin="round"
+       style="stroke-linejoin:round"
+       id="path35-2" />
     <rect
-       x="1975"
-       y="1397"
-       width="125"
-       height="10"
-       r="0"
-       rx="0"
-       ry="0"
-       fill="#ffffff"
-       stroke="#000000"
-       opacity="0"
-       class="cl_wire"
-       style="opacity:0"
-       id="rect39" />
-    <circle
-       cx="1975"
-       cy="1400"
+       x="667.69812"
+       y="302.15256"
+       width="42.680473"
+       height="22.117647"
        r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle40" />
-    <circle
-       cx="2100"
-       cy="1400"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle41" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 25,21.87499 V 0"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="translate(2000,1250)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path41" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="M 25,78.12502 V 100"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="translate(2000,1250)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path42" />
-    <path
-       fill="none"
-       stroke="#3b4449"
-       d="m 25,21.87499 -10.937496,4.6875 21.874991,9.37499 -21.874991,9.375 21.874991,9.37504 -21.874991,9.375 21.874991,9.375 L 25,78.12502"
-       stroke-width="2"
-       stroke-linecap="round"
-       stroke-miterlimit="6"
-       transform="translate(2000,1250)"
-       style="stroke-linecap:round;stroke-miterlimit:6"
-       id="path43" />
-    <path
+       rx="4"
+       ry="4"
        fill="#ffffff"
-       stroke="#ffffff"
-       d="M 12,20 H 38 V 80 H 12 Z"
-       opacity="0"
-       transform="translate(2000,1250)"
-       style="opacity:0"
-       id="path44" />
+       stroke="#3b4449"
+       stroke-width="1.6"
+       id="rect35-5" />
     <text
-       x="0"
-       y="0"
+       x="670.50085"
+       y="317.79263"
        text-anchor="start"
        font="10px &quot;Arial&quot;"
        stroke="none"
        fill="#3b4449"
        font-size="16px"
        font-weight="bold"
-       transform="translate(2043.75,1300)"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:Arial;text-anchor:start"
-       id="text45"><tspan
-         dy="-2.4000001"
-         id="tspan44">R2</tspan><tspan
-         dy="19.200001"
-         x="0"
-         id="tspan45">1 kΩ</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;stroke-width:0.8"
+       id="text35-6"><tspan
+         id="tspan35-5"
+         style="stroke-width:0.8">LED +</tspan></text>
     <circle
-       cx="2025"
-       cy="1250"
-       r="5"
+       cx="662.09814"
+       cy="336.55255"
+       r="4"
        fill="#999999"
        stroke="#3b4449"
-       stroke-width="2"
+       stroke-width="1.6"
        opacity="0"
        style="opacity:0"
-       id="circle45" />
-    <circle
-       cx="2025"
-       cy="1350"
-       r="5"
-       fill="#999999"
-       stroke="#3b4449"
-       stroke-width="2"
-       opacity="0"
-       style="opacity:0"
-       id="circle46" />
+       id="circle36-4" />
+  </g>
+  <circle
+     cx="-458.82343"
+     cy="178.6335"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="overflow:hidden;opacity:0"
+     id="circle4-6-1"
+     transform="scale(-1,1)"
+     r="4" />
+  <g
+     id="g82"
+     transform="translate(-375.28546,-302.13449)">
     <path
        fill="#3b4449"
        stroke="#3b4449"
-       d="M 0,50 12,34.894737 h 50.631266 z"
-       stroke-width="2"
+       d="m 833.32697,479.98607 -31.6,-12.28235 h -14.22682 z"
+       stroke-width="1.6"
        stroke-linejoin="round"
-       transform="matrix(-1,0,0,1,1825,1350)"
-       style="stroke-linejoin:round"
-       id="path46" />
+       style="overflow:hidden;stroke-linejoin:round"
+       id="path35-7-0"
+       sodipodi:nodetypes="cccc" />
     <rect
-       x="7"
-       y="7"
-       width="151.8938"
-       height="27.894737"
+       x="-807.72699"
+       y="445.58606"
+       width="42.680473"
+       height="22.117647"
        r="5"
-       rx="5"
-       ry="5"
+       rx="4"
+       ry="4"
        fill="#ffffff"
        stroke="#3b4449"
-       stroke-width="2"
-       transform="matrix(-1,0,0,1,1825,1350)"
-       id="rect46" />
+       stroke-width="1.6"
+       id="rect35-0-7"
+       style="overflow:hidden"
+       transform="scale(-1,1)" />
     <text
-       x="12"
-       y="22"
+       x="772.17737"
+       y="461.22614"
+       text-anchor="start"
+       font="10px &quot;Arial&quot;"
+       stroke="none"
+       fill="#3b4449"
+       font-size="16px"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;overflow:hidden;stroke-width:0.8"
+       id="text35-1-3"><tspan
+         id="tspan35-7-5"
+         style="stroke-width:0.8">GND</tspan></text>
+  </g>
+  <circle
+     cx="-458.82343"
+     cy="178.6335"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="overflow:hidden;opacity:0"
+     id="circle36-9-5"
+     transform="scale(-1,1)"
+     r="4" />
+  <g
+     id="g84"
+     transform="translate(-374.50354,-301.35256)">
+    <circle
+       cx="582.09814"
+       cy="336.55255"
+       r="4"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       opacity="0"
+       style="opacity:0"
+       id="circle30" />
+    <path
+       fill="#3b4449"
+       stroke="#3b4449"
+       d="m 582.09813,336.55256 9.6,-12.08421 h 14.17729 z"
+       stroke-width="1.6"
+       stroke-linejoin="round"
+       style="stroke-linejoin:round"
+       id="path36" />
+    <rect
+       x="587.69812"
+       y="302.15256"
+       width="42.531883"
+       height="22.31579"
+       r="5"
+       rx="4"
+       ry="4"
+       fill="#ffffff"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       id="rect36" />
+    <text
+       x="591.80157"
+       y="312.07233"
+       text-anchor="start"
+       font="10px &quot;Arial&quot;"
+       stroke="none"
+       fill="#3b4449"
+       font-size="16px"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;stroke-width:0.8"
+       id="text36"><tspan
+         dy="5.7599998"
+         id="tspan36"
+         style="stroke-width:0.8">+3.3V</tspan></text>
+    <circle
+       cx="582.09814"
+       cy="336.55255"
+       r="4"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       opacity="0"
+       style="opacity:0"
+       id="circle37" />
+  </g>
+  <g
+     id="g84-3"
+     style="overflow:hidden"
+     transform="matrix(1,0,0,-1,164.30311,531.99539)">
+    <circle
+       cx="582.09814"
+       cy="336.55255"
+       r="4"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       opacity="0"
+       style="opacity:0"
+       id="circle30-2" />
+    <path
+       fill="#3b4449"
+       stroke="#3b4449"
+       d="m 582.09813,336.55256 9.6,-12.08421 h 14.17729 z"
+       stroke-width="1.6"
+       stroke-linejoin="round"
+       style="stroke-linejoin:round"
+       id="path36-9" />
+    <rect
+       x="587.69812"
+       y="302.15256"
+       width="42.531883"
+       height="22.31579"
+       r="5"
+       rx="4"
+       ry="4"
+       fill="#ffffff"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       id="rect36-7" />
+    <text
+       x="594.7547"
+       y="-308.72922"
+       text-anchor="start"
+       font="10px &quot;Arial&quot;"
+       stroke="none"
+       fill="#3b4449"
+       font-size="16px"
+       font-weight="bold"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;stroke-width:0.8"
+       id="text36-9"
+       transform="scale(1,-1)"><tspan
+         id="tspan36-9"
+         style="stroke-width:0.8">GND</tspan></text>
+    <circle
+       cx="582.09814"
+       cy="336.55255"
+       r="4"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       opacity="0"
+       style="opacity:0"
+       id="circle37-6" />
+  </g>
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 207.59459,155.2 v -20"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     class="cl_wire"
+     style="stroke-linecap:round"
+     id="path37" />
+  <circle
+     cx="207.5946"
+     cy="155.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle38" />
+  <circle
+     cx="207.5946"
+     cy="135.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle39" />
+  <rect
+     x="203.5946"
+     y="135.2"
+     width="8"
+     height="20"
+     r="0"
+     rx="0"
+     ry="0"
+     fill="#ffffff"
+     stroke="#000000"
+     opacity="0"
+     class="cl_wire"
+     style="opacity:0;stroke-width:0.8"
+     id="rect39" />
+  <circle
+     cx="207.5946"
+     cy="155.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle40" />
+  <circle
+     cx="207.5946"
+     cy="135.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle41" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="M 287.59459,92.699993 V 75.200003"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path41" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="M 287.59459,137.70002 V 155.2"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path42" />
+  <path
+     fill="none"
+     stroke="#3b4449"
+     d="m 287.59459,92.699993 -8.75,3.75 17.5,7.499987 -17.5,7.5 17.5,7.50004 -17.5,7.5 17.5,7.5 -8.75,3.75"
+     stroke-width="1.6"
+     stroke-linecap="round"
+     stroke-miterlimit="6"
+     style="stroke-linecap:round;stroke-miterlimit:6"
+     id="path43" />
+  <path
+     fill="#ffffff"
+     stroke="#ffffff"
+     d="m 277.19459,91.200003 h 20.8 V 139.2 h -20.8 z"
+     opacity="0"
+     style="opacity:0;stroke-width:0.8"
+     id="path44" />
+  <text
+     x="302.5946"
+     y="115.2"
+     text-anchor="start"
+     font="10px &quot;Arial&quot;"
+     stroke="none"
+     fill="#3b4449"
+     font-size="16px"
+     font-weight="bold"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;stroke-width:0.8"
+     id="text45"><tspan
+       dy="-1.9200001"
+       id="tspan44"
+       style="stroke-width:0.8">R2</tspan><tspan
+       dy="15.360001"
+       x="302.5946"
+       id="tspan45"
+       style="stroke-width:0.8">1 kΩ</tspan></text>
+  <circle
+     cx="287.5946"
+     cy="75.199997"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle45" />
+  <circle
+     cx="287.5946"
+     cy="155.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle46" />
+  <circle
+     cx="347.5946"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle47" />
+  <g
+     id="g80"
+     transform="translate(-44.474985,-343.87108)">
+    <path
+       fill="#3b4449"
+       stroke="#3b4449"
+       d="m 502.09813,556.1524 -9.6,12.8 h -12.26266 z"
+       stroke-width="1.6"
+       stroke-linejoin="round"
+       style="stroke-linejoin:round"
+       id="path47" />
+    <rect
+       x="-496.49814"
+       y="-590.55237"
+       width="36.787991"
+       height="21.600002"
+       r="5"
+       rx="4"
+       ry="4"
+       fill="#ffffff"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       transform="scale(-1)"
+       id="rect47" />
+    <text
+       x="491.48447"
+       y="578.84589"
        text-anchor="end"
        font="10px &quot;Arial&quot;"
        stroke="none"
        fill="#3b4449"
        font-size="16px"
        font-weight="bold"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:Arial;text-anchor:end"
-       transform="translate(1801,1350)"
-       id="text46"><tspan
-         dy="7.1999998"
-         id="tspan46">+3.3V GPIO output</tspan></text>
-    <circle
-       cx="1825"
-       cy="1400"
-       r="5"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:end;stroke-width:0.8"
+       id="text47"><tspan
+         dy="5.7599998"
+         id="tspan47"
+         style="stroke-width:0.8">GND</tspan></text>
+  </g>
+  <circle
+     cx="127.59461"
+     cy="247.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle48" />
+  <circle
+     cx="347.5946"
+     cy="255.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle49" />
+  <circle
+     cx="127.59461"
+     cy="255.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     class="cl_wire"
+     stroke-width="1.6"
+     style="display:none"
+     id="circle50" />
+  <rect
+     x="127.59461"
+     y="226.80003"
+     width="220"
+     height="8"
+     r="0"
+     rx="0"
+     ry="0"
+     fill="#ffffff"
+     stroke="#000000"
+     opacity="0"
+     class="cl_wire"
+     style="opacity:0;stroke-width:0.8"
+     id="rect50" />
+  <circle
+     cx="347.5946"
+     cy="229.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle51" />
+  <circle
+     cx="127.59461"
+     cy="247.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle52" />
+  <path
+     fill="#3b4449"
+     stroke="#3b4449"
+     d="m 127.59459,195.2 -9.6,-12.8 H 77.596395 Z"
+     stroke-width="1.6"
+     stroke-linejoin="round"
+     style="stroke-linejoin:round"
+     id="path52" />
+  <rect
+     x="-121.99461"
+     y="160.8"
+     width="121.1946"
+     height="21.600002"
+     r="5"
+     rx="4"
+     ry="4"
+     fill="#ffffff"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     transform="scale(-1,1)"
+     id="rect52" />
+  <text
+     x="117.5723"
+     y="169.23689"
+     text-anchor="end"
+     font="10px &quot;Arial&quot;"
+     stroke="none"
+     fill="#3b4449"
+     font-size="16px"
+     font-weight="bold"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:end;stroke-width:0.8"
+     id="text52"><tspan
+       dy="5.7599998"
+       id="tspan52"
+       style="stroke-width:0.8">+3.3V GPIO output</tspan></text>
+  <circle
+     cx="127.59461"
+     cy="195.2"
+     r="4"
+     fill="#999999"
+     stroke="#3b4449"
+     stroke-width="1.6"
+     opacity="0"
+     style="opacity:0"
+     id="circle53" />
+  <path
+     fill="#999999"
+     stroke="#3b4449"
+     d="m 777.59456,101.53336 h -6.6666 V 108.2 l 2,-2 6.6666,6.66664 -2,2 h 6.6667 V 108.2 l -2,2 -6.6667,-6.66664 z"
+     stroke-width="1.6"
+     style="display:none"
+     id="path53" />
+  <text
+     fill="#3b4449"
+     font-size="9.6px"
+     x="621.19458"
+     y="115.2"
+     text-anchor="middle"
+     text-decoration="none"
+     id="text65"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <text
+     fill="#3b4449"
+     font-size="9.6px"
+     x="661.19458"
+     y="21.599987"
+     text-anchor="middle"
+     text-decoration="none"
+     id="text67"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <text
+     fill="#3b4449"
+     font-size="9.6px"
+     x="661.19458"
+     y="115.2"
+     text-anchor="middle"
+     text-decoration="none"
+     id="text69"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <text
+     fill="#3b4449"
+     font-size="9.6px"
+     x="701.19458"
+     y="21.599987"
+     text-anchor="middle"
+     text-decoration="none"
+     id="text71"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <text
+     fill="#3b4449"
+     font-size="9.6px"
+     x="701.19458"
+     y="115.2"
+     text-anchor="middle"
+     text-decoration="none"
+     id="text73"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <text
+     fill="#3b4449"
+     font-size="9.6px"
+     x="741.19458"
+     y="115.2"
+     text-anchor="middle"
+     text-decoration="none"
+     id="text75"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <text
+     fill="#3b4449"
+     font-size="12.8px"
+     x="687.5946"
+     y="46.000011"
+     text-anchor="middle"
+     font-weight="bold"
+     text-decoration="none"
+     id="text76"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <text
+     fill="#3b4449"
+     font-size="12.8px"
+     x="687.5946"
+     y="84.400009"
+     text-anchor="middle"
+     font-weight="bold"
+     text-decoration="none"
+     id="text78"
+     style="text-decoration:none;text-decoration-line:none;stroke-width:0.8" />
+  <g
+     id="g79"
+     transform="translate(-344.79774,-338.51681)">
+    <ellipse
+       cx="499.20728"
+       cy="-802.51349"
        fill="#999999"
        stroke="#3b4449"
-       stroke-width="2"
+       stroke-width="1.7834"
        opacity="0"
        style="opacity:0"
-       id="circle47" />
+       id="circle54"
+       transform="rotate(90)"
+       rx="1.7230194"
+       ry="11.536908" />
+    <ellipse
+       cx="516.4375"
+       cy="-1090.9363"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.7834"
+       opacity="0"
+       style="opacity:0"
+       id="circle55"
+       transform="rotate(90)"
+       rx="1.7230194"
+       ry="11.536908" />
+    <ellipse
+       cx="516.4375"
+       cy="-802.51349"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.7834"
+       opacity="0"
+       style="opacity:0"
+       id="circle56"
+       transform="rotate(90)"
+       rx="1.7230194"
+       ry="11.536908" />
+    <ellipse
+       cx="533.66766"
+       cy="-1090.9363"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.7834"
+       opacity="0"
+       style="opacity:0"
+       id="circle57"
+       transform="rotate(90)"
+       rx="1.7230194"
+       ry="11.536908" />
+    <ellipse
+       cx="533.66766"
+       cy="-802.51349"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.7834"
+       opacity="0"
+       style="opacity:0"
+       id="circle58"
+       transform="rotate(90)"
+       rx="1.7230194"
+       ry="11.536908" />
+    <ellipse
+       cx="550.89783"
+       cy="-802.51349"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.7834"
+       opacity="0"
+       style="opacity:0"
+       id="circle59"
+       transform="rotate(90)"
+       rx="1.7230194"
+       ry="11.536908" />
+    <rect
+       x="486.28467"
+       y="-1062.094"
+       width="77.535881"
+       height="230.73814"
+       r="0"
+       rx="0"
+       ry="0"
+       fill="#ffffff"
+       stroke="#3b4449"
+       stroke-width="1.7834"
+       id="rect59"
+       transform="rotate(90)" />
+    <path
+       fill="none"
+       stroke="#3b4449"
+       d="m 802.51352,499.20728 h 28.84227"
+       stroke-width="1.7834"
+       id="path59" />
+    <path
+       fill="none"
+       stroke="#3b4449"
+       d="m 1090.9362,516.43748 h -28.8423"
+       stroke-width="1.7834"
+       id="path60" />
+    <path
+       fill="none"
+       stroke="#3b4449"
+       d="m 802.51352,516.43748 h 28.84227"
+       stroke-width="1.7834"
+       id="path61" />
+    <path
+       fill="none"
+       stroke="#3b4449"
+       d="m 1090.9362,533.66767 h -28.8423"
+       stroke-width="1.7834"
+       id="path62" />
+    <path
+       fill="none"
+       stroke="#3b4449"
+       d="m 802.51352,533.66767 h 28.84227"
+       stroke-width="1.7834"
+       id="path63" />
+    <path
+       fill="none"
+       stroke="#3b4449"
+       d="m 802.51352,550.89787 h 28.84227"
+       stroke-width="1.7834"
+       id="path64" />
+    <text
+       fill="#3b4449"
+       font-size="9.6px"
+       x="846.03003"
+       y="502.76978"
+       text-anchor="middle"
+       text-decoration="none"
+       id="text64"
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">+12</text>
+    <text
+       fill="#3b4449"
+       font-size="9.6px"
+       x="1043.6929"
+       y="519.92731"
+       text-anchor="middle"
+       text-decoration="none"
+       id="text66"
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">LED +</text>
+    <text
+       fill="#3b4449"
+       font-size="9.6px"
+       x="847.45502"
+       y="519.92261"
+       text-anchor="middle"
+       text-decoration="none"
+       id="text68"
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">GND</text>
+    <text
+       fill="#3b4449"
+       font-size="9.6px"
+       x="1045.1741"
+       y="537.15753"
+       text-anchor="middle"
+       text-decoration="none"
+       id="text70"
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">LED -</text>
+    <text
+       fill="#3b4449"
+       font-size="9.6px"
+       x="853.34717"
+       y="537.15753"
+       text-anchor="middle"
+       text-decoration="none"
+       id="text72"
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">PWM +</text>
+    <text
+       fill="#3b4449"
+       font-size="9.6px"
+       x="851.59875"
+       y="554.3877"
+       text-anchor="middle"
+       text-decoration="none"
+       id="text74"
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">PMW -</text>
+    <text
+       fill="#3b4449"
+       font-size="12.8px"
+       x="946.23743"
+       y="528.65887"
+       text-anchor="middle"
+       font-weight="bold"
+       text-decoration="none"
+       id="text77"
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">LED Amplifier</text>
+    <rect
+       x="481.97714"
+       y="-1090.9363"
+       width="86.150978"
+       height="288.4227"
+       r="0"
+       rx="0"
+       ry="0"
+       fill="#ffffff"
+       stroke="#ffffff"
+       stroke-opacity="0"
+       opacity="0"
+       style="opacity:0;stroke-width:0.891703;stroke-opacity:0"
+       id="rect78"
+       transform="rotate(90)" />
+  </g>
+  <g
+     id="g81"
+     transform="translate(-390.02965,-275.28958)">
+    <circle
+       cx="-848.07117"
+       cy="436.18372"
+       r="4"
+       fill="#999999"
+       stroke="#3b4449"
+       stroke-width="1.6"
+       opacity="0"
+       style="overflow:hidden;opacity:0"
+       id="circle4-6"
+       transform="scale(-1,1)" />
     <path
        fill="#3b4449"
        stroke="#3b4449"
-       d="M 0,50 12,34.647058 h 81.697678 z"
-       stroke-width="2"
+       d="m 848.07116,436.18374 -9.6,-24.28235 h -14.22682 z"
+       stroke-width="1.6"
        stroke-linejoin="round"
-       transform="translate(2100,1350)"
-       style="stroke-linejoin:round"
-       id="path47" />
+       style="overflow:hidden;stroke-linejoin:round"
+       id="path35-7"
+       sodipodi:nodetypes="cccc" />
     <rect
-       x="7"
-       y="7"
-       width="245.09303"
-       height="27.647058"
+       x="-842.47119"
+       y="389.78372"
+       width="42.680473"
+       height="22.117647"
        r="5"
-       rx="5"
-       ry="5"
+       rx="4"
+       ry="4"
        fill="#ffffff"
        stroke="#3b4449"
-       stroke-width="2"
-       transform="translate(2100,1350)"
-       id="rect47" />
+       stroke-width="1.6"
+       id="rect35-0"
+       style="overflow:hidden"
+       transform="scale(-1,1)" />
     <text
-       x="12"
-       y="22"
+       x="803.96844"
+       y="399.68256"
        text-anchor="start"
        font="10px &quot;Arial&quot;"
        stroke="none"
        fill="#3b4449"
        font-size="16px"
        font-weight="bold"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16px;line-height:normal;font-family:Arial;text-anchor:start"
-       transform="translate(2100,1350)"
-       id="text47"><tspan
-         dy="7.1999998"
-         id="tspan47">+12V LED Amplifier PWM input</tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.8px;line-height:normal;font-family:Arial;text-anchor:start;overflow:hidden;stroke-width:0.8"
+       id="text35-1"><tspan
+         dy="5.7599998"
+         id="tspan35-7"
+         style="stroke-width:0.8">+12 V</tspan></text>
     <circle
-       cx="2100"
-       cy="1400"
-       r="5"
+       cx="-848.07117"
+       cy="436.18372"
+       r="4"
        fill="#999999"
        stroke="#3b4449"
-       stroke-width="2"
+       stroke-width="1.6"
        opacity="0"
-       style="opacity:0"
-       id="circle48" />
+       style="overflow:hidden;opacity:0"
+       id="circle36-9"
+       transform="scale(-1,1)" />
   </g>
 </svg>
