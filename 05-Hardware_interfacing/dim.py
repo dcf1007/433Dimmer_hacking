@@ -58,10 +58,16 @@ signal_chain = [255, 0, signal_wave_id, 255, 1, 1, 0]
 pi.wave_chain(signal_chain)
 
 
-# Wait for the transmission to finish
-while pi.wave_tx_busy():
-   time.sleep(0.1)
+try:
+   # Wait for the transmission to finish
+   while pi.wave_tx_busy():
+      time.sleep(1)
+   else:
+      raise TimeoutError("Done")
+except (KeyboardInterrupt, TimeoutError) as e:
+   print(e)
+   print("Tidying up")
 
-# Clean up
-pi.wave_delete(signal_wave_id)  # Delete the waveform
-pi.stop()  # Disconnect from pigpio
+   # Clean up
+   pi.wave_delete(signal_wave_id)  # Delete the waveform
+   pi.stop()  # Disconnect from pigpio
