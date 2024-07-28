@@ -28,14 +28,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="1.3564665"
-     inkscape:cx="434.95361"
+     inkscape:cx="206.78727"
      inkscape:cy="142.65004"
      inkscape:window-width="1920"
      inkscape:window-height="991"
      inkscape:window-x="-9"
      inkscape:window-y="-9"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g84-3" />
+     inkscape:current-layer="svg78" />
   <path
      fill="none"
      stroke="#3b4449"
@@ -1324,7 +1324,7 @@
        text-anchor="middle"
        text-decoration="none"
        id="text64"
-       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">+12</text>
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8;-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.60000038px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">+12</text>
     <text
        fill="#3b4449"
        font-size="9.6px"
@@ -1333,7 +1333,7 @@
        text-anchor="middle"
        text-decoration="none"
        id="text66"
-       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">LED +</text>
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8;-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.60000038px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">LED +</text>
     <text
        fill="#3b4449"
        font-size="9.6px"
@@ -1342,7 +1342,7 @@
        text-anchor="middle"
        text-decoration="none"
        id="text68"
-       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">GND</text>
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8;-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.60000038px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">GND</text>
     <text
        fill="#3b4449"
        font-size="9.6px"
@@ -1351,7 +1351,7 @@
        text-anchor="middle"
        text-decoration="none"
        id="text70"
-       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">LED -</text>
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8;-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.60000038px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">LED -</text>
     <text
        fill="#3b4449"
        font-size="9.6px"
@@ -1360,7 +1360,7 @@
        text-anchor="middle"
        text-decoration="none"
        id="text72"
-       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">PWM +</text>
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8;-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.60000038px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">PWM +</text>
     <text
        fill="#3b4449"
        font-size="9.6px"
@@ -1369,7 +1369,7 @@
        text-anchor="middle"
        text-decoration="none"
        id="text74"
-       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8">PMW -</text>
+       style="text-decoration:none;text-decoration-line:none;stroke-width:0.8;-inkscape-font-specification:'Arial, Normal';font-family:Arial;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:9.60000038px;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal">PMW -</text>
     <text
        fill="#3b4449"
        font-size="12.8px"
